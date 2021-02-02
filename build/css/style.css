@@ -527,6 +527,51 @@ body.white *:not(.change_color_page) {
           justify-content: flex-start;
 }
 
+.single-item-right {
+  width: 56em;
+  height: auto;
+  position: absolute;
+  z-index: 20;
+  bottom: 2%;
+  right: -25%;
+}
+
+.single-item-right2 {
+  width: 70em;
+  height: auto;
+  position: absolute;
+  z-index: 20;
+  bottom: 12%;
+  right: -33%;
+}
+
+.single-item-right3 {
+  width: 66em;
+  height: auto;
+  position: absolute;
+  z-index: 20;
+  bottom: 12%;
+  right: -20%;
+}
+
+.single-item-right4 {
+  width: 66em;
+  height: auto;
+  position: absolute;
+  z-index: 20;
+  bottom: 20%;
+  right: -20%;
+}
+
+.single-item-first {
+  width: 60em;
+  height: auto;
+  position: absolute;
+  z-index: 20;
+  bottom: 20%;
+  right: 2%;
+}
+
 .horizontal-scroll-wrapper {
   position: relative;
 }
