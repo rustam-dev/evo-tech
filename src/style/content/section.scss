@@ -324,10 +324,55 @@ div{
       right: -4%;
     }
   }
+
   &.left {
     justify-content: flex-start;
   }
-  
+
+  &-right{
+    width: 56em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 2%;
+    right: -25%;
+  }
+
+  &-right2{
+    width: 70em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 12%;
+    right: -33%;
+  }
+
+  &-right3{
+    width: 66em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 12%;
+    right: -20%;
+  }
+
+  &-right4{
+    width: 66em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 20%;
+    right: -20%;
+  }
+
+  &-first{
+    width: 60em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 20%;
+    right: 2%;
+  }
 }
 
 .horizontal-scroll-wrapper {

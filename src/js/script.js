@@ -4,6 +4,7 @@ var loader = document.getElementById("page_loader");
 window.addEventListener("load", function(){
     loader.style.display = 'none';
 })
+
 // wow
 new WOW().init();
 
@@ -320,3 +321,5 @@ class SmoothScroll {
     document.body.removeChild(div);
     return size;
   }
+
+ 
