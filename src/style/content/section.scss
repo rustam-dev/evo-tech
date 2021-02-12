@@ -141,6 +141,10 @@ body {
   @media #{$mobile}{
     font-size: 6em;
   }
+  @media #{$tablet}{
+    font-size: 6em;
+    text-align: center;
+  }
 }
 
 .container-title2{
@@ -149,6 +153,10 @@ body {
 
   @media #{$mobile}{
     font-size: 4em;
+  }
+  @media #{$tablet}{
+    font-size: 4em;
+    text-align: center;
   }
 }
 
@@ -163,6 +171,27 @@ body {
   }
 }
 
+.hidden_txt{
+  display: none;
+
+  @media #{$mobile}{
+    display: block;
+    font-size: 1.3em;
+    
+  }
+}
+.not_hidden_txt{
+  @media #{$mobile}{
+    display: none;
+  }
+  
+}
+
+div{
+  @media #{$mobile}{
+    text-align: center;
+  }
+}
 .container2-title{
   font-size: 8em;
   -webkit-text-stroke: 1.5px rgb(2, 2, 2);
@@ -175,6 +204,10 @@ body {
     font-size: 6em;
     text-align: center;
   }
+  @media #{$tablet}{
+    font-size: 6em;
+    text-align: center;
+  }
 }
 
 .container2-title2{
@@ -183,6 +216,10 @@ body {
   text-align: end;
   
   @media #{$mobile}{
+    font-size: 4em;
+    text-align: center;
+  }
+  @media #{$tablet}{
     font-size: 4em;
     text-align: center;
   }
@@ -238,6 +275,11 @@ body {
   align-items: center;
   justify-content: center;
 //   font-size: 70px;
+
+  &-svg{
+    width: 960px;
+    height: 540px;
+  }
   &-box {
     width: 80%;
     height: 80%;
@@ -260,6 +302,10 @@ body {
       width: 100%;
       text-align: center;
     }
+    @media #{$tablet}{
+      width: 100%;
+      text-align: center;
+    }
   }
   &-bg{
     width: 70em;
@@ -268,6 +314,15 @@ body {
     z-index: 20;
     bottom: 0%;
     right: -4%;
+
+    @media #{$tablet}{
+      right: 0;
+      bottom: 19%;
+    }
+    @media #{$laptop}{
+      bottom: 31%;
+      right: -4%;
+    }
   }
   &.left {
     justify-content: flex-start;
@@ -365,14 +420,25 @@ body {
         left: 40%;
         font-size: 1.2em;
 
+        
         @media #{$mobile}{
           top: 60%;
           left: 22%;
         }
+        @media (min-width: 580px) and (max-width: 610px){
+          left: 32%;
+          font-size: 1.4em;
+        }
+        @media #{$tablet}{
+          left: 34%;
+          font-size: 1.6em;
+        }
+        @media #{$laptop}{
+          left: 35%;
+          font-size: 1.88em;
+        }
       }
     }
-  
-
 }
 
 
