@@ -1,0 +1,42 @@
+.aboutus_main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 6em 2em;
+
+    ::selection{
+        background: #ff9d00;
+    }
+}
+
+.main-title-aboutus{
+    text-align: center;
+    font-size: 8em;
+    font-family: var(--text-font2);
+    padding-top: .1em;
+}
+
+.paragraph-company{
+    margin-top: 3em;
+    padding-left: 0.5em;
+}
+
+.aboutus-paragraph{
+    padding-top: 2.5em;
+    font-size: 1.59em;
+    padding-left: 1em;
+    text-transform: none;
+    line-height: 1.5em;
+}
+
+.single-item-bg2{
+    width: 70em;
+    height: auto;
+    position: absolute;
+    z-index: 20;
+    bottom: 18%;
+    right: -2%;
+  }
+
+
+
