@@ -379,15 +379,21 @@ body.white *:not(.change_color_page) {
   position: relative;
 }
 
+.text_align_left {
+  text-align: left;
+}
+
 .container-title {
   font-size: 10em;
   -webkit-text-stroke: 1.5px white;
   -webkit-text-fill-color: transparent;
+  text-align: right;
 }
 
 .container-title2 {
   font-size: 6em;
   color: #FF7A01 !important;
+  text-align: right;
 }
 
 .container-txt {
@@ -405,13 +411,11 @@ body.white *:not(.change_color_page) {
   font-size: 8em;
   -webkit-text-stroke: 1.5px #020202;
   -webkit-text-fill-color: transparent;
-  text-align: end;
 }
 
 .container2-title2 {
   font-size: 7em;
   color: #1B1B1B !important;
-  text-align: end;
 }
 
 .container-btn {
@@ -432,6 +436,17 @@ body.white *:not(.change_color_page) {
   position: absolute;
   background: #fbff00;
   z-index: -1;
+}
+
+.btn_align_left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .btn-hover:before {
@@ -474,24 +489,16 @@ body.white *:not(.change_color_page) {
   transition: left .5s 0s, right .5s 0s, top .3s .5s;
 }
 
+.padding {
+  padding: 2em 6em;
+}
+
 .single-item {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100vw;
       -ms-flex: 0 0 100vw;
           flex: 0 0 100vw;
   height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .single-item-svg {
@@ -500,13 +507,14 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-box {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   z-index: 80;
+  padding: 2em 2em 2em 2em;
 }
 
 .single-item-container {
-  width: 60%;
   height: 100%;
   padding: 1.2em 0.8em;
   display: inline-block;
@@ -514,12 +522,8 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-bg {
-  width: 70em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 0%;
-  right: -4%;
 }
 
 .single-item.left {
@@ -529,22 +533,30 @@ body.white *:not(.change_color_page) {
           justify-content: flex-start;
 }
 
+.single-item-dmimg {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .single-item-right {
-  width: 56em;
+  width: 40em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 2%;
-  right: -25%;
 }
 
 .single-item-right2 {
-  width: 70em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 12%;
-  right: -33%;
 }
 
 .single-item-right3 {
@@ -557,21 +569,13 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
-  width: 66em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 20%;
-  right: -20%;
 }
 
 .single-item-first {
   width: 60em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 20%;
-  right: 2%;
 }
 
 .horizontal-scroll-wrapper {
@@ -950,6 +954,7 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
 }
 
 .horizontal-scroll-txt1 {
@@ -1199,11 +1204,6 @@ svg > * {
     text-align: center;
   }
 
-  .single-item-bg {
-    right: 0;
-    bottom: 19%;
-  }
-
   .header_center-txt {
     left: 34%;
     font-size: 1.6em;
@@ -1289,21 +1289,16 @@ svg > * {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .single-item-bg {
-    bottom: 31%;
-    right: -4%;
-  }
-
-  .header_center-txt {
-    left: 35%;
-    font-size: 1.88em;
-  }
-}
-
 @media (min-width: 580px) and (max-width: 610px) {
   .header_center-txt {
     left: 32%;
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header_center-txt {
+    left: 35%;
+    font-size: 1.88em;
   }
 }
