@@ -448,7 +448,11 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right {
+<<<<<<< HEAD
   width: 55em;
+=======
+  width: 40em;
+>>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
   height: auto;
 }
 
@@ -467,7 +471,11 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
+<<<<<<< HEAD
   width: 65em;
+=======
+  width: 55em;
+>>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
   height: auto;
 }
 
