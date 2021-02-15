@@ -35,8 +35,6 @@
 
 #p_prldr .svg_anm {
   position: absolute;
-  /* top: 50%; */
-  /* left: 44%; */
   width: 200px;
   height: 200px;
   background-size: 200px;
@@ -179,6 +177,16 @@ div {
   }
 }
 
+#lottie {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+}
+
 :root {
   --scrollbar-size: 0px;
 }
@@ -298,15 +306,21 @@ body.white *:not(.change_color_page) {
   position: relative;
 }
 
+.text_align_left {
+  text-align: left;
+}
+
 .container-title {
   font-size: 10em;
   -webkit-text-stroke: 1.5px white;
   -webkit-text-fill-color: transparent;
+  text-align: right;
 }
 
 .container-title2 {
   font-size: 6em;
   color: #FF7A01 !important;
+  text-align: right;
 }
 
 .container-txt {
@@ -316,17 +330,19 @@ body.white *:not(.change_color_page) {
   line-height: 1.6em;
 }
 
+.hidden_txt {
+  display: none;
+}
+
 .container2-title {
   font-size: 8em;
   -webkit-text-stroke: 1.5px #020202;
   -webkit-text-fill-color: transparent;
-  text-align: end;
 }
 
 .container2-title2 {
   font-size: 7em;
   color: #1B1B1B !important;
-  text-align: end;
 }
 
 .container-btn {
@@ -347,6 +363,11 @@ body.white *:not(.change_color_page) {
   position: absolute;
   background: #fbff00;
   z-index: -1;
+}
+
+.btn_align_left {
+  display: flex;
+  align-items: flex-start;
 }
 
 .btn-hover:before {
@@ -381,22 +402,29 @@ body.white *:not(.change_color_page) {
   transition: left .5s 0s, right .5s 0s, top .3s .5s;
 }
 
+.padding {
+  padding: 2em 6em;
+}
+
 .single-item {
   flex: 0 0 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.single-item-svg {
+  width: 960px;
+  height: 540px;
 }
 
 .single-item-box {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   z-index: 80;
+  padding: 2em 2em 2em 2em;
 }
 
 .single-item-container {
-  width: 60%;
   height: 100%;
   padding: 1.2em 0.8em;
   display: inline-block;
@@ -404,34 +432,29 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-bg {
-  width: 70em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 0%;
-  right: -4%;
 }
 
 .single-item.left {
   justify-content: flex-start;
 }
 
+.single-item-dmimg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .single-item-right {
-  width: 56em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 2%;
-  right: -25%;
 }
 
 .single-item-right2 {
-  width: 70em;
+  width: 55em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 12%;
-  right: -33%;
 }
 
 .single-item-right3 {
@@ -444,21 +467,13 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
-  width: 66em;
+  width: 65em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 20%;
-  right: -20%;
 }
 
 .single-item-first {
   width: 60em;
   height: auto;
-  position: absolute;
-  z-index: 20;
-  bottom: 20%;
-  right: 2%;
 }
 
 .horizontal-scroll-wrapper {
@@ -755,6 +770,7 @@ html {
 
 .horizontal-scroll-text {
   display: flex;
+  position: absolute;
 }
 
 .horizontal-scroll-txt1 {
@@ -935,7 +951,56 @@ svg > * {
   }
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+  .contpre {
+    width: 200px;
+    height: 200px;
+    left: 26.2%;
+  }
+
+  .container-title {
+    font-size: 6em;
+    text-align: center;
+  }
+
+  .container-title2 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .container2-title {
+    font-size: 6em;
+    text-align: center;
+  }
+
+  .container2-title2 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .single-item-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header_center-txt {
+    left: 34%;
+    font-size: 1.6em;
+  }
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
+  .contpre {
+    width: 200px;
+    height: 200px;
+    left: 4.4%;
+  }
+
+  #p_prldr .svg_anm {
+    width: 200px;
+    height: 200px;
+  }
+
   .container-title {
     font-size: 6em;
   }
@@ -946,6 +1011,19 @@ svg > * {
 
   .container-txt {
     font-size: 1.3em;
+  }
+
+  .hidden_txt {
+    display: block;
+    font-size: 1.3em;
+  }
+
+  .not_hidden_txt {
+    display: none;
+  }
+
+  div {
+    text-align: center;
   }
 
   .container2-title {
@@ -987,5 +1065,19 @@ svg > * {
 
   .horizontal-scroll-txt4 {
     font-size: 10em;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 610px) {
+  .header_center-txt {
+    left: 32%;
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header_center-txt {
+    left: 35%;
+    font-size: 1.88em;
   }
 }

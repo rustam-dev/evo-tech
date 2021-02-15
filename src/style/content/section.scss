@@ -133,22 +133,36 @@ body {
   position: relative;
 }
 
+.text_align_left{
+  text-align: left;
+}
+
 .container-title{
   font-size: 10em;
   -webkit-text-stroke: 1.5px white;
   -webkit-text-fill-color: transparent;
+  text-align: right;
   
   @media #{$mobile}{
     font-size: 6em;
+  }
+  @media #{$tablet}{
+    font-size: 6em;
+    text-align: center;
   }
 }
 
 .container-title2{
   font-size: 6em;
-  color: $red!important;  
+  color: $red!important; 
+  text-align: right; 
 
   @media #{$mobile}{
     font-size: 4em;
+  }
+  @media #{$tablet}{
+    font-size: 4em;
+    text-align: center;
   }
 }
 
@@ -163,15 +177,40 @@ body {
   }
 }
 
+.hidden_txt{
+  display: none;
+
+  @media #{$mobile}{
+    display: block;
+    font-size: 1.3em;
+    
+  }
+}
+.not_hidden_txt{
+  @media #{$mobile}{
+    display: none;
+  }
+  
+}
+
+div{
+  @media #{$mobile}{
+    text-align: center;
+  }
+}
 .container2-title{
   font-size: 8em;
   -webkit-text-stroke: 1.5px rgb(2, 2, 2);
   -webkit-text-fill-color: transparent;
   // writing-mode: vertical-lr;
   // text-orientation: upright;
-  text-align: end;
+  
 
   @media #{$mobile}{
+    font-size: 6em;
+    text-align: center;
+  }
+  @media #{$tablet}{
     font-size: 6em;
     text-align: center;
   }
@@ -180,9 +219,13 @@ body {
 .container2-title2{
   font-size: 7em;
   color:$black!important;
-  text-align: end;
+  
   
   @media #{$mobile}{
+    font-size: 4em;
+    text-align: center;
+  }
+  @media #{$tablet}{
     font-size: 4em;
     text-align: center;
   }
@@ -209,6 +252,11 @@ body {
     } 
 }
 
+.btn_align_left{
+  display: flex;
+  align-items: flex-start;
+}
+
 .btn-hover {
   &:before {
     top: -0.1rem; bottom: 100%; left: 0; right: 100%;
@@ -231,25 +279,27 @@ body {
   }
 }
 
+.padding{
+  padding: 2em 6em;
+}
 .single-item{
   flex: 0 0 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-//   font-size: 70px;
+  
+
+
+  &-svg{
+    width: 960px;
+    height: 540px;
+  }
   &-box {
-    width: 80%;
-    height: 80%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // border-width: 2px;
-    // border-style: solid;
+    width: 100%;
+    height: 100%;
+    margin: auto;
     z-index: 80;
+    padding: 2em 2em 2em 2em;
   }
   &-container{
-    width: 60%;
     height: 100%;
     padding: 1.2em 0.8em;
     display: inline-block;
@@ -260,36 +310,34 @@ body {
       width: 100%;
       text-align: center;
     }
+    @media #{$tablet}{
+      width: 100%;
+      text-align: center;
+    }
   }
   &-bg{
-    width: 70em;
+    width: 55em;
     height: auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 0%;
-    right: -4%;
   }
 
   &.left {
     justify-content: flex-start;
   }
-
+  // dm section img
+  &-dmimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &-right{
-    width: 56em;
-    height: auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 2%;
-    right: -25%;
+    width: 55em;
+    height: auto;   
   }
 
   &-right2{
-    width: 70em;
+    width: 55em;
     height: auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 12%;
-    right: -33%;
   }
 
   &-right3{
@@ -302,21 +350,13 @@ body {
   }
 
   &-right4{
-    width: 66em;
+    width: 65em;
     height: auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 20%;
-    right: -20%;
   }
 
   &-first{
     width: 60em;
     height: auto;
-    position: absolute;
-    z-index: 20;
-    bottom: 20%;
-    right: 2%;
   }
 }
 
@@ -410,14 +450,25 @@ body {
         left: 40%;
         font-size: 1.2em;
 
+        
         @media #{$mobile}{
           top: 60%;
           left: 22%;
         }
+        @media (min-width: 580px) and (max-width: 610px){
+          left: 32%;
+          font-size: 1.4em;
+        }
+        @media #{$tablet}{
+          left: 34%;
+          font-size: 1.6em;
+        }
+        @media #{$laptop}{
+          left: 35%;
+          font-size: 1.88em;
+        }
       }
     }
-  
-
 }
 
 
@@ -637,6 +688,7 @@ body, html {
   }
   &-text{
     display: flex;
+    position: absolute;
   }
   
   &-txt1{
