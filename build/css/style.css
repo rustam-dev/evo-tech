@@ -550,7 +550,11 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right {
+<<<<<<< Updated upstream
   width: 40em;
+=======
+  width: 55em;
+>>>>>>> Stashed changes
   height: auto;
 }
 
@@ -569,7 +573,11 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
+<<<<<<< Updated upstream
   width: 55em;
+=======
+  width: 65em;
+>>>>>>> Stashed changes
   height: auto;
 }
 
