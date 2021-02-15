@@ -144,8 +144,7 @@ body {
   text-align: right;
   
   @media #{$mobile}{
-    font-size: 5em;
-    text-align: center;
+    font-size: 6em;
   }
   @media #{$tablet}{
     font-size: 6em;
@@ -159,8 +158,7 @@ body {
   text-align: right; 
 
   @media #{$mobile}{
-    font-size: 3em;
-    text-align: center;
+    font-size: 4em;
   }
   @media #{$tablet}{
     font-size: 4em;
@@ -175,7 +173,7 @@ body {
   line-height: 1.6em;
 
   @media #{$mobile}{
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 
@@ -184,7 +182,7 @@ body {
 
   @media #{$mobile}{
     display: block;
-    font-size: 1em;
+    font-size: 1.3em;
     
   }
 }
@@ -209,7 +207,7 @@ div{
   
 
   @media #{$mobile}{
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -224,7 +222,7 @@ div{
   
   
   @media #{$mobile}{
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -241,13 +239,7 @@ div{
   background: $red;
   cursor: pointer;
   outline: none;
-
-  @media #{$mobile}{
-    font-size: 1.5em;
-    text-align: center;
-  }
 }
-
 
 .container-btn {
     &:before,
@@ -263,10 +255,6 @@ div{
 .btn_align_left{
   display: flex;
   align-items: flex-start;
-
-  @media #{$mobile}{
-    display: block;
-  }
 }
 
 .btn-hover {
@@ -293,27 +281,12 @@ div{
 
 .padding{
   padding: 2em 6em;
-
-  @media #{$mobile}{
-    padding: 2em 4em;
-  }
-}
-
-.contact-box{
-  @media #{$mobile}{
-    padding: 2em 1em 2em 1em;
-    background-color: #ff9d00a1;
-  }
 }
 .single-item{
   flex: 0 0 100vw;
   height: 100vh;
+  
 
-  @media #{$mobile}{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
   &-svg{
     width: 960px;
@@ -325,10 +298,6 @@ div{
     margin: auto;
     z-index: 80;
     padding: 2em 2em 2em 2em;
-
-    @media #{$mobile}{
-      padding: 2em 1em 2em 1em;
-    }
   }
   &-container{
     height: 100%;
@@ -340,7 +309,6 @@ div{
     @media #{$mobile}{
       width: 100%;
       text-align: center;
-      padding: 1.2em 0.6em;
     }
     @media #{$tablet}{
       width: 100%;
@@ -361,17 +329,9 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media #{$mobile}{
-      display: none;
-    }
   }
   &-right{
-<<<<<<< Updated upstream
-    width: 40em;
-=======
     width: 55em;
->>>>>>> Stashed changes
     height: auto;   
   }
 
@@ -390,21 +350,13 @@ div{
   }
 
   &-right4{
-<<<<<<< Updated upstream
-    width: 55em;
-=======
     width: 65em;
->>>>>>> Stashed changes
     height: auto;
   }
 
   &-first{
     width: 60em;
     height: auto;
-
-    @media #{$mobile}{
-      width: 30em;
-    }
   }
 }
 
@@ -737,10 +689,6 @@ body, html {
   &-text{
     display: flex;
     position: absolute;
-
-    @media #{$mobile}{
-      left: 3%;
-    }
   }
   
   &-txt1{

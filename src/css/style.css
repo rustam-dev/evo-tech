@@ -448,11 +448,7 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right {
-<<<<<<< Updated upstream
-  width: 40em;
-=======
   width: 55em;
->>>>>>> Stashed changes
   height: auto;
 }
 
@@ -471,11 +467,7 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
-<<<<<<< Updated upstream
-  width: 55em;
-=======
   width: 65em;
->>>>>>> Stashed changes
   height: auto;
 }
 
@@ -1010,22 +1002,20 @@ svg > * {
   }
 
   .container-title {
-    font-size: 5em;
-    text-align: center;
+    font-size: 6em;
   }
 
   .container-title2 {
-    font-size: 3em;
-    text-align: center;
+    font-size: 4em;
   }
 
   .container-txt {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .hidden_txt {
     display: block;
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .not_hidden_txt {
@@ -1037,55 +1027,18 @@ svg > * {
   }
 
   .container2-title {
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
   }
 
   .container2-title2 {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-  }
-
-  .container-btn {
-    font-size: 1.5em;
-    text-align: center;
-  }
-
-  .btn_align_left {
-    display: block;
-  }
-
-  .padding {
-    padding: 2em 4em;
-  }
-
-  .contact-box {
-    padding: 2em 1em 2em 1em;
-    background-color: #ff9d00a1;
-  }
-
-  .single-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .single-item-box {
-    padding: 2em 1em 2em 1em;
   }
 
   .single-item-container {
     width: 100%;
     text-align: center;
-    padding: 1.2em 0.6em;
-  }
-
-  .single-item-dmimg {
-    display: none;
-  }
-
-  .single-item-first {
-    width: 30em;
   }
 
   .header_center-txt {
@@ -1096,10 +1049,6 @@ svg > * {
   .hamburger-menu {
     top: 1.3rem;
     right: 2rem;
-  }
-
-  .horizontal-scroll-text {
-    left: 3%;
   }
 
   .horizontal-scroll-txt1 {
