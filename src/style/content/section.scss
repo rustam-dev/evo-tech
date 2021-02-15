@@ -144,7 +144,8 @@ body {
   text-align: right;
   
   @media #{$mobile}{
-    font-size: 6em;
+    font-size: 5em;
+    text-align: center;
   }
   @media #{$tablet}{
     font-size: 6em;
@@ -158,7 +159,8 @@ body {
   text-align: right; 
 
   @media #{$mobile}{
-    font-size: 4em;
+    font-size: 3em;
+    text-align: center;
   }
   @media #{$tablet}{
     font-size: 4em;
@@ -173,7 +175,7 @@ body {
   line-height: 1.6em;
 
   @media #{$mobile}{
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
@@ -182,7 +184,7 @@ body {
 
   @media #{$mobile}{
     display: block;
-    font-size: 1.3em;
+    font-size: 1em;
     
   }
 }
@@ -207,7 +209,7 @@ div{
   
 
   @media #{$mobile}{
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -222,7 +224,7 @@ div{
   
   
   @media #{$mobile}{
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -239,7 +241,13 @@ div{
   background: $red;
   cursor: pointer;
   outline: none;
+
+  @media #{$mobile}{
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
+
 
 .container-btn {
     &:before,
@@ -255,6 +263,10 @@ div{
 .btn_align_left{
   display: flex;
   align-items: flex-start;
+
+  @media #{$mobile}{
+    display: block;
+  }
 }
 
 .btn-hover {
@@ -281,12 +293,27 @@ div{
 
 .padding{
   padding: 2em 6em;
+
+  @media #{$mobile}{
+    padding: 2em 4em;
+  }
+}
+
+.contact-box{
+  @media #{$mobile}{
+    padding: 2em 1em 2em 1em;
+    background-color: #ff9d00a1;
+  }
 }
 .single-item{
   flex: 0 0 100vw;
   height: 100vh;
-  
 
+  @media #{$mobile}{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   &-svg{
     width: 960px;
@@ -298,6 +325,10 @@ div{
     margin: auto;
     z-index: 80;
     padding: 2em 2em 2em 2em;
+
+    @media #{$mobile}{
+      padding: 2em 1em 2em 1em;
+    }
   }
   &-container{
     height: 100%;
@@ -309,6 +340,7 @@ div{
     @media #{$mobile}{
       width: 100%;
       text-align: center;
+      padding: 1.2em 0.6em;
     }
     @media #{$tablet}{
       width: 100%;
@@ -329,13 +361,13 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media #{$mobile}{
+      display: none;
+    }
   }
   &-right{
-<<<<<<< HEAD
-    width: 55em;
-=======
     width: 40em;
->>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
     height: auto;   
   }
 
@@ -354,17 +386,17 @@ div{
   }
 
   &-right4{
-<<<<<<< HEAD
-    width: 65em;
-=======
     width: 55em;
->>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
     height: auto;
   }
 
   &-first{
     width: 60em;
     height: auto;
+
+    @media #{$mobile}{
+      width: 30em;
+    }
   }
 }
 
@@ -697,6 +729,10 @@ body, html {
   &-text{
     display: flex;
     position: absolute;
+
+    @media #{$mobile}{
+      left: 3%;
+    }
   }
   
   &-txt1{

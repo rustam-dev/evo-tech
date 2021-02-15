@@ -550,11 +550,7 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right {
-<<<<<<< HEAD
-  width: 55em;
-=======
   width: 40em;
->>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
   height: auto;
 }
 
@@ -573,11 +569,7 @@ body.white *:not(.change_color_page) {
 }
 
 .single-item-right4 {
-<<<<<<< HEAD
-  width: 65em;
-=======
   width: 55em;
->>>>>>> 8576b646fa8d5870a2baf146b43688b0528b6d53
   height: auto;
 }
 
@@ -1231,20 +1223,22 @@ svg > * {
   }
 
   .container-title {
-    font-size: 6em;
+    font-size: 5em;
+    text-align: center;
   }
 
   .container-title2 {
-    font-size: 4em;
+    font-size: 3em;
+    text-align: center;
   }
 
   .container-txt {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .hidden_txt {
     display: block;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .not_hidden_txt {
@@ -1256,18 +1250,64 @@ svg > * {
   }
 
   .container2-title {
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
   }
 
   .container2-title2 {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
+  }
+
+  .container-btn {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .btn_align_left {
+    display: block;
+  }
+
+  .padding {
+    padding: 2em 4em;
+  }
+
+  .contact-box {
+    padding: 2em 1em 2em 1em;
+    background-color: #ff9d00a1;
+  }
+
+  .single-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .single-item-box {
+    padding: 2em 1em 2em 1em;
   }
 
   .single-item-container {
     width: 100%;
     text-align: center;
+    padding: 1.2em 0.6em;
+  }
+
+  .single-item-dmimg {
+    display: none;
+  }
+
+  .single-item-first {
+    width: 30em;
   }
 
   .header_center-txt {
@@ -1278,6 +1318,10 @@ svg > * {
   .hamburger-menu {
     top: 1.3rem;
     right: 2rem;
+  }
+
+  .horizontal-scroll-text {
+    left: 3%;
   }
 
   .horizontal-scroll-txt1 {
