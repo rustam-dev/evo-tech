@@ -1,7 +1,3 @@
-// black 1B1B1B
-// orange FF7A01>>FF6400
-// yellow FF9D00
-
 $red:  #FF7A01;
 $white: #fff0d9;
 $black: #1B1B1B;
@@ -9,6 +5,7 @@ $darkblack: #000000;
 $myred: #f41200;
 $orange: #ff6400;
 $yellow: #ff9d00;
+
 // screen sizes for media queries
 $mobile: "(min-width: 360px) and (max-width: 599px)";
 $tablet: "(min-width: 600px) and (max-width: 1023px)";
@@ -21,6 +18,12 @@ $desktop: "(min-width: 1280px)";
 
 *, :after, :before {
   box-sizing: border-box;
+}
+
+*{
+  ::selection{
+    background: #ff9d00;
+  }
 }
 
 
@@ -44,13 +47,11 @@ body {
   *:not(.change_color_page) {
     color: $white;
     transition: color 0.5s ease-in-out, border-color 0.5s ease;
-    // border-color:$red;
   }
   &.white {
     *:not(.change_color_page) {
       color: $black;
       transition: color 0.5s ease-in-out, border-color 0.5s ease;
-      // border-color: $black;
     }
   }
 }
@@ -144,7 +145,8 @@ body {
   text-align: right;
   
   @media #{$mobile}{
-    font-size: 6em;
+    font-size: 5em;
+    text-align: center;
   }
   @media #{$tablet}{
     font-size: 6em;
@@ -158,7 +160,8 @@ body {
   text-align: right; 
 
   @media #{$mobile}{
-    font-size: 4em;
+    font-size: 3em;
+    text-align: center;
   }
   @media #{$tablet}{
     font-size: 4em;
@@ -173,7 +176,7 @@ body {
   line-height: 1.6em;
 
   @media #{$mobile}{
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
@@ -182,7 +185,7 @@ body {
 
   @media #{$mobile}{
     display: block;
-    font-size: 1.3em;
+    font-size: 1em;
     
   }
 }
@@ -202,12 +205,10 @@ div{
   font-size: 8em;
   -webkit-text-stroke: 1.5px rgb(2, 2, 2);
   -webkit-text-fill-color: transparent;
-  // writing-mode: vertical-lr;
-  // text-orientation: upright;
   
 
   @media #{$mobile}{
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -222,7 +223,7 @@ div{
   
   
   @media #{$mobile}{
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
   }
   @media #{$tablet}{
@@ -239,7 +240,13 @@ div{
   background: $red;
   cursor: pointer;
   outline: none;
+
+  @media #{$mobile}{
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
+
 
 .container-btn {
     &:before,
@@ -255,6 +262,10 @@ div{
 .btn_align_left{
   display: flex;
   align-items: flex-start;
+
+  @media #{$mobile}{
+    display: block;
+  }
 }
 
 .btn-hover {
@@ -281,12 +292,27 @@ div{
 
 .padding{
   padding: 2em 6em;
+
+  @media #{$mobile}{
+    padding: 2em 4em;
+  }
+}
+
+.contact-box{
+  @media #{$mobile}{
+    padding: 2em 1em 2em 1em;
+    background-color: #ff9d00a1;
+  }
 }
 .single-item{
   flex: 0 0 100vw;
   height: 100vh;
-  
 
+  @media #{$mobile}{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   &-svg{
     width: 960px;
@@ -298,6 +324,10 @@ div{
     margin: auto;
     z-index: 80;
     padding: 2em 2em 2em 2em;
+
+    @media #{$mobile}{
+      padding: 2em 1em 2em 1em;
+    }
   }
   &-container{
     height: 100%;
@@ -309,6 +339,7 @@ div{
     @media #{$mobile}{
       width: 100%;
       text-align: center;
+      padding: 1.2em 0.6em;
     }
     @media #{$tablet}{
       width: 100%;
@@ -329,10 +360,14 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media #{$mobile}{
+      display: none;
+    }
   }
   &-right{
-    width: 55em;
-    height: auto;   
+    width: 50em;
+    height: auto;
   }
 
   &-right2{
@@ -350,13 +385,17 @@ div{
   }
 
   &-right4{
-    width: 65em;
+    width: 55em;
     height: auto;
   }
 
   &-first{
     width: 60em;
     height: auto;
+
+    @media #{$mobile}{
+      width: 30em;
+    }
   }
 }
 
@@ -381,8 +420,6 @@ div{
 .header{
     width: 100%;
     height: 100vh;
-    // background: url(../../images/evo_blur.jpg) no-repeat;
-    // background-size: cover;
     position: relative;
 
     &_logo{
@@ -471,6 +508,195 @@ div{
     }
 }
 
+// Form
+
+// input,
+// button {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -300%);
+//   display: block;
+//   width: 70vw;
+//   opacity: 0;
+//   pointer-events: none;
+//   transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+// }
+
+// input {
+//   padding: 0.25rem 0;
+//   border: 0;
+//   border-bottom: 1px solid #bb1515;
+//   outline: 0;
+//   background: transparent;
+//   color: #fff;
+//   font-size: 3rem;
+//   line-height: 4rem;
+//   letter-spacing: 0.125rem;
+//   transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+// }
+
+// input::-moz-selection {
+//   background: rgba(187, 21, 21, 0.25);
+// }
+
+// input::selection {
+//   background: rgba(187, 21, 21, 0.25);
+// }
+
+// button,
+// .signup-button {
+//   padding: 0.25em 0;
+//   border: 0;
+//   outline: 0;
+//   background: #bb1515;
+//   color: rgba(255, 255, 255, 0.85);
+//   font-size: 2rem;
+//   line-height: 3.6rem;
+//   letter-spacing: 0.0625rem;
+//   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
+//   text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.2);
+// }
+
+// input:focus,
+// button:focus {
+//   opacity: 1;
+//   transform: translate(-50%, -100%);
+//   pointer-events: auto;
+//   transition: all 0.4s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.5s;
+//   z-index: 10;
+// }
+
+// input:focus ~ input,
+// input:focus ~ button {
+//   transform: translate(-50%, 500%);
+//   transition: all 0.5s ease-in;
+// }
+
+// input:focus ~ label .label-text {
+//   transform: translate(-50%, 300%);
+//   transition: all 0.5s ease-in;
+// }
+
+// input:focus ~ .tip {
+//   opacity: 1;
+// }
+
+// input:focus ~ .signup-button,
+// button:focus ~ .signup-button {
+//   opacity: 0;
+// }
+
+// input:focus + label .label-text {
+//   opacity: 1;
+//   transform: translate(-50%, -100%);
+//   transition: all 0.3s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.4s;
+// }
+
+// input:focus + label .nav-dot:before {
+//   background: #a41212;
+//   box-shadow: 0 0 0 0.15rem #111, 0 0 0.05rem 0.26rem #bb1515;
+// }
+
+// .tip {
+//   position: fixed;
+//   top: 57%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 70%;
+//   opacity: 0;
+//   color: #fff;
+//   font-size: 0.875rem;
+//   font-weight: 300;
+//   letter-spacing: 0.125rem;
+//   text-transform: uppercase;
+//   text-align: right;
+//   transition: opacity 0.25s 0.5s;
+// }
+
+// .signup-button {
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -100%);
+//   width: 70vw;
+//   padding: 0.25rem 0;
+//   line-height: 3.6rem;
+//   text-align: center;
+//   pointer-events: none;
+//   cursor: pointer;
+//   transition: opacity 0.4s 0.3s;
+// }
+
+// .label-text {
+//   position: fixed;
+//   top: calc(50% - 4rem);
+//   left: 50%;
+//   transform: translate(-50%, -300%);
+//   width: 70vw;
+//   padding: 3.125rem 0 1.5rem;
+//   text-transform: uppercase;
+//   color: #fff;
+//   opacity: 0;
+//   font-size: 1.125rem;
+//   font-weight: 300;
+//   letter-spacing: 0.125rem;
+//   pointer-events: none;
+//   transition: all 0.4s cubic-bezier(0.4, 0.25, 0.8, 0.3) 0.05s;
+// }
+
+// .nav-dot {
+//   cursor: pointer;
+//   position: fixed;
+//   padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+//   top: 52%;
+//   right: 1.25rem;
+// }
+// .nav-dot:before {
+//   content: "";
+//   display: inline-block;
+//   border-radius: 50%;
+//   width: 0.375rem;
+//   height: 0.375rem;
+//   margin-right: 0.625rem;
+//   position: fixed;
+//   background-color: #16272f;
+//   border: 0;
+//   transition: all 0.25s;
+// }
+// .nav-dot:hover:before {
+//   width: 0.625rem;
+//   height: 0.625rem;
+//   margin-top: -0.125rem;
+//   margin-left: -0.125rem;
+//   background-color: #a41212;
+// }
+
+// label[for=input-1] .nav-dot {
+//   margin-top: -125px;
+// }
+
+// label[for=input-2] .nav-dot {
+//   margin-top: -100px;
+// }
+
+// label[for=input-3] .nav-dot {
+//   margin-top: -75px;
+// }
+
+// label[for=input-4] .nav-dot {
+//   margin-top: -50px;
+// }
+
+// label[for=input-5] .nav-dot {
+//   margin-top: -25px;
+// }
+
+// form {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+// }
 
 
 // hamburger menu
@@ -537,7 +763,6 @@ body, html {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 100%;
-    // border: solid $white .15rem;
     position: fixed;
     top: 2rem;
     right: 4rem;
@@ -689,6 +914,10 @@ body, html {
   &-text{
     display: flex;
     position: absolute;
+
+    @media #{$mobile}{
+      left: 3%;
+    }
   }
   
   &-txt1{
