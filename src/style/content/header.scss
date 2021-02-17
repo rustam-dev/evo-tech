@@ -54,19 +54,6 @@ $desktop: "(min-width: 1280px)";
           
         }
     }
-    /* preloader */
-// body {
-// background: #000;
-// }
-// .preloader-1 {
-// margin: 100px auto 0;
-// width: 66px;
-// height: 12px;
-// }
-
-/* .preloader-2 {
-margin: 120px auto 0;
-} */
 
 div {
 // color: #fff;
@@ -179,3 +166,6 @@ height: 15px;
   opacity: 1;
 }
 
+.menu-ul{
+  padding-inline-start: 0px;
+}

@@ -464,7 +464,8 @@
 							<p class="container-title2">НА УСЛУГИ</p>
 							<div class="single-item-container">
 								<p class="container-txt not_hidden_txt">
-									У нас самые низкие цены среди конкурентов, лучшее ценообразование и персональный
+									У нас самые низкие 
+									цены среди конкурентов, лучшее ценообразование и персональный
 									подход
 									к каждому заказу.
 									<br><br>
@@ -487,10 +488,37 @@
 				</div>
 
 				<!-- Form -->
+				
 				<div class="single-item" data-color="off_white">
-					<div class="row padding">
-						<div class="col-lg-6">
-							
+					<div class="row padding form-flex">
+						<!-- form -->
+						<div class="col-lg-6 padding align_item_center">
+							<form action="telegram.php" method="POST" id="myform">
+
+								<legend class="form-title">Для заявки заполните форму пожалуйста</legend>
+								
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<legend class="form-title">Ваше имя и фамилия</legend>
+										<input type="text" id="" name="user_name" placeholder="Имя и Фамилия" required>
+									</div>
+									<div class="form-group  col-lg-6">
+										<legend class="form-title">Ваш номер телефона</legend>
+										<input type="text" id="" name="user_phone" placeholder="+998 90 999 09 09" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-12">
+										<legend class="form-title">Ваши вопросы или предложения</legend>
+										<textarea rows="4" cols="50" name="user_message" form="myform" required></textarea>
+									</div>  
+									<div class="align_item_center">
+										<button class="form-btn " type="submit">Отправить</button>
+									</div>                     
+									
+								</div>
+			
+							</form>
 						</div>
 						<div class="single-item-box col-lg-6" data-depth="-3" data-direction="y">
 							<p class="container2-title">Оставьте</p>
@@ -522,7 +550,7 @@
 								<img class="single-item-bg" src="../images/contactus.png" alt="">
 							</div>
 						</div>
-						<div class="col-lg-6 single-item-box">
+						<div class="col-lg-6 single-item-box contact-box">
 							<h2>info@evo-tech.uz</h2>
 							<h2>+998907888852</h2>
 							<br>

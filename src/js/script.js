@@ -322,6 +322,4 @@ class SmoothScroll {
     return size;
   }
 
-
-
  
